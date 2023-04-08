@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.navigation {
+  display: block;
+  padding-left: 12px;
+  padding-right: 16px;
+  overflow: visible;
+  /* background-color: transparent; */
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  transition-timing-function: ease-in-out;
+  color: #141b29;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  text-align: center;
+}
+.advert{
+    background: red;
+    color: white;
+    padding: 0 3px
+}
+#blog-page * {
+  box-sizing: border-box;
+  transition: 0.5s;
+  height: 110px;
+  padding-right: 1.5em;
+}
+/* header.navigation nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    position: relative;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px
+} */
+
+nav > .menu {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+nav > .menu ul {
+  list-style-type: none;
+  display: flex;
+}
+nav > .menu ul li {
+  padding: 10px;
+}
+
+nav > .menu ul li a {
+  text-decoration: none;
+
+  color: black;
+}
+
+.Entertainment {
+  font-size: 1.87em;
+  color: #fff;
+  text-shadow: 0 0 26px #141b29;
+  box-sizing: border-box;
+  scroll-margin-top: 60px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-sizing: inherit;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.sidebar {
+  /* float: left; */
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+  /* float: left; */
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 260px;
+  color: #7a7d83; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+.section2 {
+  display: flex;
+}
+.innerSection {
+  display: block;
+}
+
+.haywhy {
+  color: #000000;
+}
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
