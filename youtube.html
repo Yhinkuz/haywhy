@@ -1,0 +1,240 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube</title>
+    </head>
+    <body>
+        <iframe>Olayinka</iframe>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote>For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect <q>communities, wildlife, and the places in which they live.</q></blockquote>
+        <span style="border: 1px solid black;">Hello World</span>
+        <div style="background-color:black;color:white;padding:20px;">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+          </div> 
+
+    </body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HAYWHYEntertainment</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.mobile-nav {
+  text-align: center;
+}
+.menu ul { 
+  display: flex;
+}
+
+.menu ul  li {
+padding: 5px;
+
+}
+.menu ul li a {
+text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  color: white;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.navigation{
+  padding-left: 12px;
+  padding-right: 16px;
+  overflow: visible;
+  background-color: transparent;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  transition-timing-function: ease-in-out;
+  display: block;
+  color: #141b29;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  text-align: center;
+}
+#blog-page * {
+  box-sizing: border-box;
+  transition: 0.5s;
+  height: 110px;
+  padding-right: 1.5em;
+}
+header.navigation nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    position: relative;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px
+}
+
+
+.Entertainment {
+  font-size: 1.87em;
+  color: #fff;
+  text-shadow: 0 0 26px #141b29;
+  box-sizing: border-box;
+  scroll-margin-top: 60px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-sizing: inherit;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+  color: #7a7d83; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.haywhy {
+    color: #000000;
+}
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<header class="navigation">
+  <nav data-controller="mobile-nav">
+    <div class="menu">
+        <ul id="navigation-menu">
+          <li id="nav-link-features" itemprop="name">
+            <a href="/feature" itemprop="url">About</a>
+          </li>
+          <li id="nav-link-sample-band-sites" itemprop="name">
+            <a href="/sample-band-sites" itemprop="url">Audio</a>
+          </li>
+          <li id="nav-link-video" itemprop="name">
+            <a href="/video" itemprop="url">Video</a>
+          </li>
+          <li id="nav-link-gallary" itemprop="name">
+            <a href="/gallary" itemprop="url">gallary</a>
+          </li>
+          <li id="nav-link-help" itemprop="name">
+            <a href="/help" itemprop="url"> Help</a>
+          </li>
+          <li id="nav-link-try-it-free" class="action">
+            <a class="btn btn-primary tryfree" data-key="header" data-action="click->try-it-free-ga#submitGAEvent" href="/try-it-free"> Try it Free</a>
+          </li>
+          <li id="nav-link-login" class="action">
+            <a class="btn btn-secondary login" href="/login">Sign in</a>
+          </li>
+        </ul>
+        <a id="btn-try-it-free" class="btn btn-primary action-primary main-nav-button" data-key="header" data-action="click->try-it-free-ga#submitGAEvent" href="/try-it-free">Try it Free</a>
+        <a id="btn-login" class="btn btn-secondary action-secondary main-nav-button hide-on-mobile" href="/login">Sign in</a>  
+    </div>
+  </nav>  
+  <h1>HAYWHY</h1>
+</header>
+
+<section class="Entertainment" data-fade-container="false">
+  <div class="content">
+  <h2>
+  <a href="/blog">ENTERTAINMENT</a>
+</h2>
+</div>
+</section>
+
+<section>
+  <nav>
+    <ul>
+      <li><u>ARTISTE</u></li>
+      <br>
+      <li><a href="#">Yun_Cee</a></li>
+      <br>
+      <li><a href="#">Imole Aje</a></li>
+      <br>
+      <li><a href="#">Lekki Damz</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 class="haywhy">HAYWHYEntertainment</h1>
+    <p>
+        <em>
+        Abdulsalam Saheed Ayomide is the Founder & CEO of Haywhy Entertainment, 
+        including the much-praised The New Music Industry: Adapting, Growing and Thriving in The Information Age. Haywhy has built an extensive career in songwriting, 
+        live performance, recording, session playing, production work and music instruction.
+        </em>
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p> &copy; HAYWHYEntertainment &#128525</p>
+</footer>
+
+</body>
+</html>
